@@ -6,6 +6,8 @@ import handleValidationError from '../../error/handleValidationError'
 import ApiError from '../../error/ApiError'
 import { ErrorRequestHandler } from 'express'
 import { errorLogger } from '../../shared/logger'
+import { ZodError } from 'zod'
+import handleZorError from '../../error/handleZodError'
 
 const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
   process.env.NODE_ENV === 'development'
@@ -18,6 +20,11 @@ const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
 
   if (error?.name === 'ValidationError') {
     const simplifiedError = handleValidationError(error)
+    statusCode = simplifiedError?.statusCode
+    message = simplifiedError?.message
+    errorMessage = simplifiedError?.errorMessages
+  } else if (error instanceof ZodError) {
+    const simplifiedError = handleZorError(error)
     statusCode = simplifiedError?.statusCode
     message = simplifiedError?.message
     errorMessage = simplifiedError?.errorMessages
