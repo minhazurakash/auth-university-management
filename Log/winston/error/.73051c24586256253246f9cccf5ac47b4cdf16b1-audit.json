@@ -1,25 +1,25 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\.73051c24586256253246f9cccf5ac47b4cdf16b1-audit.json",
+  "files": [
+    {
+      "date": 1686247998258,
+      "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-09-00-error.log",
+      "hash": "6436a05041a0372bff5698c5e0db87e9e9100e7d64d4a9e12a1489e86131bce8"
     },
-    "auditLog": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\.73051c24586256253246f9cccf5ac47b4cdf16b1-audit.json",
-    "files": [
-        {
-            "date": 1686247998258,
-            "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-09-00-error.log",
-            "hash": "6436a05041a0372bff5698c5e0db87e9e9100e7d64d4a9e12a1489e86131bce8"
-        },
-        {
-            "date": 1686670031448,
-            "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-13-21-error.log",
-            "hash": "714ef6b1b1e27f60d742fb003cacbad6d83106a0b4cea19baa652fb8198bff1e"
-        },
-        {
-            "date": 1686676415029,
-            "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-13-23-error.log",
-            "hash": "be7f7d3c1a11718eca244bb1efbb55836b012b52c2bcaf69d17155c42ba1ddae"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1686670031448,
+      "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-13-21-error.log",
+      "hash": "714ef6b1b1e27f60d742fb003cacbad6d83106a0b4cea19baa652fb8198bff1e"
+    },
+    {
+      "date": 1686676415029,
+      "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-13-23-error.log",
+      "hash": "be7f7d3c1a11718eca244bb1efbb55836b012b52c2bcaf69d17155c42ba1ddae"
+    }
+  ],
+  "hashType": "sha256"
 }

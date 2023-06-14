@@ -1,9 +1,9 @@
 import config from '../../../config'
-import { IUser } from './users.interface'
-import { User } from './users.model'
-import { generatedUserId } from './users.utils'
+import { IUser } from './user.interface'
+import { User } from './user.model'
+import { generatedUserId } from './user.utils'
 
-export const createUserService = async (user: IUser): Promise<IUser | null> => {
+const createUserService = async (user: IUser): Promise<IUser | null> => {
   const id = await generatedUserId()
   user.id = id as string
   if (!user.password) {
@@ -14,4 +14,8 @@ export const createUserService = async (user: IUser): Promise<IUser | null> => {
   }
   const createdUser = User.create(user)
   return createdUser
+}
+
+export const UserService = {
+  createUserService,
 }
