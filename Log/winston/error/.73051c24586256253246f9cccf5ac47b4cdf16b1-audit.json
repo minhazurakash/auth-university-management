@@ -1,55 +1,65 @@
 {
-  "keep": {
-    "days": true,
-    "amount": 14
-  },
-  "auditLog": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\.73051c24586256253246f9cccf5ac47b4cdf16b1-audit.json",
-  "files": [
-    {
-      "date": 1686247998258,
-      "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-09-00-error.log",
-      "hash": "6436a05041a0372bff5698c5e0db87e9e9100e7d64d4a9e12a1489e86131bce8"
+    "keep": {
+        "days": true,
+        "amount": 14
     },
-    {
-      "date": 1686670031448,
-      "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-13-21-error.log",
-      "hash": "714ef6b1b1e27f60d742fb003cacbad6d83106a0b4cea19baa652fb8198bff1e"
-    },
-    {
-      "date": 1686676415029,
-      "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-13-23-error.log",
-      "hash": "be7f7d3c1a11718eca244bb1efbb55836b012b52c2bcaf69d17155c42ba1ddae"
-    },
-    {
-      "date": 1686763167991,
-      "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-14-23-error.log",
-      "hash": "1852101baa554b57d9cc77da3973d50b853969b17e3c15e7252f07af2f4a31f8"
-    },
-    {
-      "date": 1686765641775,
-      "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-15-00-error.log",
-      "hash": "13c8ae01486ebcfd79493870904fabcf5b99914a4991ede25b6b1a8c2de71c1d"
-    },
-    {
-      "date": 1686770914390,
-      "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-15-01-error.log",
-      "hash": "fdb59b2eec7615f23c2273a588620ea2ad33979edf86817b842cd1af72ebde34"
-    },
-    {
-      "date": 1686893670911,
-      "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-16-11-error.log",
-      "hash": "26d28263d1824f5dab93155ab79c33d2cbfa27fb9a0d4a3180e10d2989bc44f0"
-    },
-    {
-      "date": 1686895650601,
-      "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-16-12-error.log",
-      "hash": "7c2786f8b59b64606d023ebcca9c8419dfcbaa0c09a79ace68f0d7fb4e7ef7b0"
-    },
-    {
-      "date": 1686928089846,
-      "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-16-21-error.log",
-      "hash": "d920a51d378cae1272ba7b58b95afae372bc34035563c34bc820edf9d36ba616"
-    }
-  ],
-  "hashType": "sha256"
+    "auditLog": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\.73051c24586256253246f9cccf5ac47b4cdf16b1-audit.json",
+    "files": [
+        {
+            "date": 1686247998258,
+            "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-09-00-error.log",
+            "hash": "6436a05041a0372bff5698c5e0db87e9e9100e7d64d4a9e12a1489e86131bce8"
+        },
+        {
+            "date": 1686670031448,
+            "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-13-21-error.log",
+            "hash": "714ef6b1b1e27f60d742fb003cacbad6d83106a0b4cea19baa652fb8198bff1e"
+        },
+        {
+            "date": 1686676415029,
+            "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-13-23-error.log",
+            "hash": "be7f7d3c1a11718eca244bb1efbb55836b012b52c2bcaf69d17155c42ba1ddae"
+        },
+        {
+            "date": 1686763167991,
+            "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-14-23-error.log",
+            "hash": "1852101baa554b57d9cc77da3973d50b853969b17e3c15e7252f07af2f4a31f8"
+        },
+        {
+            "date": 1686765641775,
+            "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-15-00-error.log",
+            "hash": "13c8ae01486ebcfd79493870904fabcf5b99914a4991ede25b6b1a8c2de71c1d"
+        },
+        {
+            "date": 1686770914390,
+            "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-15-01-error.log",
+            "hash": "fdb59b2eec7615f23c2273a588620ea2ad33979edf86817b842cd1af72ebde34"
+        },
+        {
+            "date": 1686893670911,
+            "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-16-11-error.log",
+            "hash": "26d28263d1824f5dab93155ab79c33d2cbfa27fb9a0d4a3180e10d2989bc44f0"
+        },
+        {
+            "date": 1686895650601,
+            "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-16-12-error.log",
+            "hash": "7c2786f8b59b64606d023ebcca9c8419dfcbaa0c09a79ace68f0d7fb4e7ef7b0"
+        },
+        {
+            "date": 1686928089846,
+            "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-16-21-error.log",
+            "hash": "d920a51d378cae1272ba7b58b95afae372bc34035563c34bc820edf9d36ba616"
+        },
+        {
+            "date": 1686931960487,
+            "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-16-22-error.log",
+            "hash": "eeee4a4cf70742d53283aa50ed2f7a52ec93c7014329ccd0d78438ce259d8b70"
+        },
+        {
+            "date": 1686934920978,
+            "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-16-23-error.log",
+            "hash": "6365a7f1146cac5857ce0c4af00e3e0801af67884fd7a9f576c9d8eced889d71"
+        }
+    ],
+    "hashType": "sha256"
 }
