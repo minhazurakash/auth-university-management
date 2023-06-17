@@ -69,6 +69,11 @@
             "date": 1687011652343,
             "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-17-20-error.log",
             "hash": "7c7ffcaae69e5db4050b69338aae9f96b6d95f9c33ccdf208a27070e3f6ca47b"
+        },
+        {
+            "date": 1687014000658,
+            "name": "C:\\workspace\\next_level_web_dev\\Auth-Service\\Log\\winston\\error\\UMS-2023-06-17-21-error.log",
+            "hash": "cc803b6b37a466c44625309a678fbc563d22f1c99ee81699bcc96906aeacdbe9"
         }
     ],
     "hashType": "sha256"
