@@ -6,6 +6,10 @@ import { AcademicSemesterController } from './academicSemester.controller'
 
 const router = express.Router()
 
+router.get(
+  '/semesters/:id',
+  AcademicSemesterController.getSingleAcademicSemester
+)
 router.get('/semesters', AcademicSemesterController.getAcademicSemesters)
 router.post(
   '/create-semester',

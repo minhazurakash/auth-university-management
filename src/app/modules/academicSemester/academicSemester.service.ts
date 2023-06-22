@@ -72,8 +72,15 @@ const getAcademicSemesters = async (
     data: result,
   }
 }
+const getSingleAcademicSemester = async (
+  id: string
+): Promise<IAcademicSemester | null> => {
+  const result = await AcademicSemester.findById(id)
+  return result
+}
 
 export const academicSemesterService = {
   createAcademicSemester,
   getAcademicSemesters,
+  getSingleAcademicSemester,
 }
