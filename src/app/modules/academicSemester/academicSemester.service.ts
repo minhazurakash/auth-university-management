@@ -1,7 +1,11 @@
 import { SortOrder } from 'mongoose'
 import ApiError from '../../../error/ApiError'
 import { paginateHelper } from '../../helper/calculatePaginateHelper'
-import { IGenericResponse, IpaginationProps } from '../../interfaces/common'
+import {
+  IGenericResponse,
+  ISearchOption,
+  IpaginationProps,
+} from '../../interfaces/common'
 import { academicSemesterTitleCodeMapper } from './academicSemester.constant'
 import { IAcademicSemester } from './academicSemester.interface'
 import { AcademicSemester } from './academicSemester.model'
@@ -21,8 +25,31 @@ const createAcademicSemester = async (
 }
 
 const getAcademicSemesters = async (
+  filters: ISearchOption,
   pagination: IpaginationProps
 ): Promise<IGenericResponse<IAcademicSemester[]>> => {
+  const { searchTerm, ...filtersData } = filters
+
+  const searchAbleField = ['title', 'code', 'year']
+  const andCondition = []
+  if (searchTerm) {
+    andCondition.push({
+      $or: searchAbleField?.map(item => ({
+        [item]: {
+          $regex: searchTerm,
+          $options: 'i',
+        },
+      })),
+    })
+  }
+  if (Object.keys(filtersData).length) {
+    andCondition.push({
+      $and: Object.entries(filtersData)?.map(([field, value]) => ({
+        [field]: value,
+      })),
+    })
+  }
+
   const { page, limit, skip, sortBy, sortOrder } =
     paginateHelper.calculatePaginateHelper(pagination)
 
@@ -30,8 +57,8 @@ const getAcademicSemesters = async (
   if (sortBy && sortOrder) {
     sortConditions[sortBy] = sortOrder
   }
-
-  const result = await AcademicSemester.find()
+  const whereCondition = andCondition?.length > 0 ? { $and: andCondition } : {}
+  const result = await AcademicSemester.find(whereCondition)
     .sort(sortConditions)
     .skip(skip)
     .limit(limit)
