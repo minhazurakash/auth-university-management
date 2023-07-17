@@ -72,12 +72,14 @@ const getAcademicSemesters = async (
     data: result,
   }
 }
+
 const getSingleAcademicSemester = async (
   id: string
 ): Promise<IAcademicSemester | null> => {
   const result = await AcademicSemester.findById(id)
   return result
 }
+
 const updateAcademicSemester = async (
   id: string,
   payload: Partial<IAcademicSemester>
@@ -98,9 +100,17 @@ const updateAcademicSemester = async (
   return result
 }
 
+const deleteAcademicSemester = async (
+  id: string
+): Promise<IAcademicSemester | null> => {
+  const result = await AcademicSemester.findByIdAndDelete(id)
+  return result
+}
+
 export const academicSemesterService = {
   createAcademicSemester,
   getAcademicSemesters,
   getSingleAcademicSemester,
   updateAcademicSemester,
+  deleteAcademicSemester,
 }
