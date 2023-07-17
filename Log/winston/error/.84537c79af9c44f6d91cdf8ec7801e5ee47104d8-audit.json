@@ -1,40 +1,40 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/error/.84537c79af9c44f6d91cdf8ec7801e5ee47104d8-audit.json",
+  "files": [
+    {
+      "date": 1689582108426,
+      "name": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/error/UMS-2023-07-17-14-error.log",
+      "hash": "b2189d7416ccdfcf2af4dbdaeeeceae6c2f106a107b2de981afc0963c4124100"
     },
-    "auditLog": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/error/.84537c79af9c44f6d91cdf8ec7801e5ee47104d8-audit.json",
-    "files": [
-        {
-            "date": 1689582108426,
-            "name": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/error/UMS-2023-07-17-14-error.log",
-            "hash": "b2189d7416ccdfcf2af4dbdaeeeceae6c2f106a107b2de981afc0963c4124100"
-        },
-        {
-            "date": 1689584525341,
-            "name": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/error/UMS-2023-07-17-15-error.log",
-            "hash": "c083b522c1e7c1e04f58a8a267a9d9c488e367ba349f219f2c61f3d6fd1ddd54"
-        },
-        {
-            "date": 1689597213087,
-            "name": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/error/UMS-2023-07-17-18-error.log",
-            "hash": "3fb18293a48b748d59de9d6f095bedf4a837a4bb8b3b617ea89b4390f87be244"
-        },
-        {
-            "date": 1689599033598,
-            "name": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/error/UMS-2023-07-17-19-error.log",
-            "hash": "e7761d843293e568ffce2a5e39eb26c43f57155a1db3cbe60294e161d61c5b55"
-        },
-        {
-            "date": 1689603605466,
-            "name": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/error/UMS-2023-07-17-20-error.log",
-            "hash": "6fc0434b4f51d758cb4e418ad1f09a13e6e13f4790c4abea6bef2baf15ed261a"
-        },
-        {
-            "date": 1689606545804,
-            "name": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/error/UMS-2023-07-17-21-error.log",
-            "hash": "1d0c11598e1a12113caecc37e92612904ced30c15e089c4b79f3dfa87f668f64"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1689584525341,
+      "name": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/error/UMS-2023-07-17-15-error.log",
+      "hash": "c083b522c1e7c1e04f58a8a267a9d9c488e367ba349f219f2c61f3d6fd1ddd54"
+    },
+    {
+      "date": 1689597213087,
+      "name": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/error/UMS-2023-07-17-18-error.log",
+      "hash": "3fb18293a48b748d59de9d6f095bedf4a837a4bb8b3b617ea89b4390f87be244"
+    },
+    {
+      "date": 1689599033598,
+      "name": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/error/UMS-2023-07-17-19-error.log",
+      "hash": "e7761d843293e568ffce2a5e39eb26c43f57155a1db3cbe60294e161d61c5b55"
+    },
+    {
+      "date": 1689603605466,
+      "name": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/error/UMS-2023-07-17-20-error.log",
+      "hash": "6fc0434b4f51d758cb4e418ad1f09a13e6e13f4790c4abea6bef2baf15ed261a"
+    },
+    {
+      "date": 1689606545804,
+      "name": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/error/UMS-2023-07-17-21-error.log",
+      "hash": "1d0c11598e1a12113caecc37e92612904ced30c15e089c4b79f3dfa87f668f64"
+    }
+  ],
+  "hashType": "sha256"
 }
