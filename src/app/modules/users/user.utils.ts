@@ -1,6 +1,7 @@
+import { IAcademicSemester } from '../academicSemester/academicSemester.interface'
 import { User } from './user.model'
 
-export const getLastUserId = async () => {
+export const getLastStudentId = async () => {
   const lastUser = await User.findOne({}, { id: 1, _id: 0 })
     .sort({
       createdAt: -1,
@@ -8,8 +9,12 @@ export const getLastUserId = async () => {
     .lean()
   return lastUser?.id
 }
-export const generatedUserId = async () => {
-  const currentId = (await getLastUserId()) || (0).toString().padStart(5, '0')
-  const incrementId = parseInt(currentId) + 1
+export const generatedUserId = async (academicSemester: IAcademicSemester) => {
+  const currentId =
+    (await getLastStudentId()) || (0).toString().padStart(5, '0')
+  let incrementId = (parseInt(currentId) + 1).toString().padStart(5, '0')
+  incrementId = `${academicSemester.year.substring(2)}${
+    academicSemester.code
+  }${incrementId}`
   return incrementId.toString().padStart(5, '0')
 }
