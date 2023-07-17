@@ -20,6 +20,6 @@ const AcademicFacultySchema = new Schema<IAcademicFaculty>(
 )
 
 export const AcademicFaculty = model<IAcademicFaculty, AcademicFacultyModel>(
-  'academic-faculty',
+  'AcademicFaculty',
   AcademicFacultySchema
 )

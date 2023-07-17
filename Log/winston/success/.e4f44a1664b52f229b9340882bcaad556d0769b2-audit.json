@@ -24,6 +24,16 @@
             "date": 1689599033595,
             "name": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/success/UMS-2023-07-17-19-Success.log",
             "hash": "70d9e2fd396b70244eb9068db6aa1269d5bab11fcb64191f1dd7c5b47ed1ddc0"
+        },
+        {
+            "date": 1689603605463,
+            "name": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/success/UMS-2023-07-17-20-Success.log",
+            "hash": "bbeaa873e411a84a4d2f7d27d668d8358c1115d210077fc2b99aeb3c019d2e15"
+        },
+        {
+            "date": 1689606545801,
+            "name": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/success/UMS-2023-07-17-21-Success.log",
+            "hash": "89077a33d08635ec9d3fd65862520ea0563b2ce3452facb27844d0b2c4c10d5c"
         }
     ],
     "hashType": "sha256"

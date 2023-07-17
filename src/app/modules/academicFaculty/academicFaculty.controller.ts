@@ -20,7 +20,7 @@ const createAcademicFaculty = catchAsync(
   }
 )
 const getAcademicFacultys = catchAsync(async (req: Request, res: Response) => {
-  const filters = pick(req?.query, ['searchTerm', 'title', 'code', 'year'])
+  const filters = pick(req?.query, ['searchTerm', 'title'])
   const paginationOptios = pick(req.query, paginationFields)
   const result = await AcademicFacultyService.getAcademicFacultys(
     filters,
