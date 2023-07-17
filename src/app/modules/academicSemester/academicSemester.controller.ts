@@ -1,14 +1,14 @@
-import { NextFunction, Request, Response } from 'express'
+import { Request, Response } from 'express'
 import { academicSemesterService } from './academicSemester.service'
 import { catchAsync } from '../../../shared/catchAsync'
 import { pick } from '../../../shared/pick'
-import { paginationFields } from '../constants/pagination'
+import { paginationFields } from '../../constants/pagination'
 import { sendResponse } from '../../../shared/sendResponse'
 import { IAcademicSemester } from './academicSemester.interface'
 import httpStatus from 'http-status'
 
 const createAcademicSemester = catchAsync(
-  async (req: Request, res: Response, next: NextFunction) => {
+  async (req: Request, res: Response) => {
     const newSemester = await academicSemesterService.createAcademicSemester(
       req?.body
     )
@@ -17,30 +17,26 @@ const createAcademicSemester = catchAsync(
       message: 'AcademicSemester created successful',
       data: newSemester,
     })
-    next()
   }
 )
-const getAcademicSemesters = catchAsync(
-  async (req: Request, res: Response, next: NextFunction) => {
-    const filters = pick(req?.query, ['searchTerm', 'title', 'code', 'year'])
-    const paginationOptios = pick(req.query, paginationFields)
-    const result = await academicSemesterService.getAcademicSemesters(
-      filters,
-      paginationOptios
-    )
+const getAcademicSemesters = catchAsync(async (req: Request, res: Response) => {
+  const filters = pick(req?.query, ['searchTerm', 'title', 'code', 'year'])
+  const paginationOptios = pick(req.query, paginationFields)
+  const result = await academicSemesterService.getAcademicSemesters(
+    filters,
+    paginationOptios
+  )
 
-    sendResponse<IAcademicSemester[]>(res, {
-      statusCode: httpStatus.OK,
-      success: true,
-      message: 'semester fetched successful',
-      meta: result.meta,
-      data: result.data,
-    })
-    next()
-  }
-)
+  sendResponse<IAcademicSemester[]>(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'semester fetched successful',
+    meta: result.meta,
+    data: result.data,
+  })
+})
 const getSingleAcademicSemester = catchAsync(
-  async (req: Request, res: Response, next: NextFunction) => {
+  async (req: Request, res: Response) => {
     const result = await academicSemesterService.getSingleAcademicSemester(
       req.params.id
     )
@@ -50,11 +46,10 @@ const getSingleAcademicSemester = catchAsync(
       message: 'single semester fetched successful',
       data: result,
     })
-    next()
   }
 )
 const updateAcademicSemester = catchAsync(
-  async (req: Request, res: Response, next: NextFunction) => {
+  async (req: Request, res: Response) => {
     const updateData = req.body
     const result = await academicSemesterService.updateAcademicSemester(
       req.params.id,
@@ -66,7 +61,6 @@ const updateAcademicSemester = catchAsync(
       message: 'Semester update successful',
       data: result,
     })
-    next()
   }
 )
 
