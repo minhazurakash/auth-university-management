@@ -8,6 +8,7 @@ import { ErrorRequestHandler } from 'express'
 import { errorLogger } from '../../shared/logger'
 import { ZodError } from 'zod'
 import handleZorError from '../../error/handleZodError'
+import handleCastError from '../../error/handleCastError'
 
 const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
   process.env.NODE_ENV === 'development'
@@ -28,6 +29,11 @@ const globalErrorHandler: ErrorRequestHandler = (error, req, res, next) => {
     statusCode = simplifiedError?.statusCode
     message = simplifiedError?.message
     errorMessage = simplifiedError?.errorMessages
+  } else if (error?.name === 'CastError') {
+    const simplifiedError = handleCastError(error)
+    statusCode = simplifiedError.statusCode
+    message = simplifiedError.message
+    errorMessage = simplifiedError.errorMessages
   } else if (error instanceof ApiError) {
     statusCode = error?.statusCode
     message = error?.message

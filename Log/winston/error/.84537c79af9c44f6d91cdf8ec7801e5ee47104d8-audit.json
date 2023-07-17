@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/error/.84537c79af9c44f6d91cdf8ec7801e5ee47104d8-audit.json",
+    "files": [
+        {
+            "date": 1689582108426,
+            "name": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/error/UMS-2023-07-17-14-error.log",
+            "hash": "b2189d7416ccdfcf2af4dbdaeeeceae6c2f106a107b2de981afc0963c4124100"
+        }
+    ],
+    "hashType": "sha256"
+}
