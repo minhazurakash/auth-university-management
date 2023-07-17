@@ -6,15 +6,18 @@ import { AcademicSemesterController } from './academicSemester.controller'
 
 const router = express.Router()
 
-router.get(
-  '/semesters/:id',
-  AcademicSemesterController.getSingleAcademicSemester
-)
-router.get('/semesters', AcademicSemesterController.getAcademicSemesters)
+router.get('/:id', AcademicSemesterController.getSingleAcademicSemester)
+router.get('/', AcademicSemesterController.getAcademicSemesters)
 router.post(
   '/create-semester',
   validateRequest(AcademicSemesterValidation.createAcademicSemesterZodSchema),
   AcademicSemesterController.createAcademicSemester
+)
+
+router.patch(
+  '/:id',
+  validateRequest(AcademicSemesterValidation.updateAcademicSemesterZodSchema),
+  AcademicSemesterController.updateAcademicSemester
 )
 
 export const AcademicSemesterRoutes = router
