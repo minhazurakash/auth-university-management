@@ -1,20 +1,20 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/success/.e4f44a1664b52f229b9340882bcaad556d0769b2-audit.json",
+  "files": [
+    {
+      "date": 1689582108423,
+      "name": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/success/UMS-2023-07-17-14-Success.log",
+      "hash": "76203207523911cbba5b93e25a17c9d079d5ff0926751aaea0ea2dc871a5215f"
     },
-    "auditLog": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/success/.e4f44a1664b52f229b9340882bcaad556d0769b2-audit.json",
-    "files": [
-        {
-            "date": 1689582108423,
-            "name": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/success/UMS-2023-07-17-14-Success.log",
-            "hash": "76203207523911cbba5b93e25a17c9d079d5ff0926751aaea0ea2dc871a5215f"
-        },
-        {
-            "date": 1689584525781,
-            "name": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/success/UMS-2023-07-17-15-Success.log",
-            "hash": "431849389db50ea1cc14b8c953826b9cba1a76e09f46c0d36016abf0f8a10926"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1689584525781,
+      "name": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/success/UMS-2023-07-17-15-Success.log",
+      "hash": "431849389db50ea1cc14b8c953826b9cba1a76e09f46c0d36016abf0f8a10926"
+    }
+  ],
+  "hashType": "sha256"
 }
