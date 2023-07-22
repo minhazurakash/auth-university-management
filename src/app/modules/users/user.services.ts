@@ -1,10 +1,18 @@
 import config from '../../../config'
+import { IAcademicSemester } from '../academicSemester/academicSemester.interface'
 import { IUser } from './user.interface'
 import { User } from './user.model'
-import { generatedUserId } from './user.utils'
+import { generatedStudentId } from './user.utils'
 
 const createUserService = async (user: IUser): Promise<IUser | null> => {
-  const id = await generatedUserId()
+  const semester: IAcademicSemester = {
+    code: '01',
+    year: '2025',
+    title: 'Summer',
+    startMonth: 'December',
+    endMonth: 'April',
+  }
+  const id = await generatedStudentId(semester)
   user.id = id as string
   if (!user.password) {
     user.password = config.default_user_pass as string
