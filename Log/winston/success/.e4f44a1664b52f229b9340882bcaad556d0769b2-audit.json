@@ -34,6 +34,11 @@
             "date": 1689606545801,
             "name": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/success/UMS-2023-07-17-21-Success.log",
             "hash": "89077a33d08635ec9d3fd65862520ea0563b2ce3452facb27844d0b2c4c10d5c"
+        },
+        {
+            "date": 1689615052548,
+            "name": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/success/UMS-2023-07-17-23-Success.log",
+            "hash": "370cacc4a42ea348ce97656bcdc5f1356e54a864bb0d04eae89a1eb36ad2f944"
         }
     ],
     "hashType": "sha256"

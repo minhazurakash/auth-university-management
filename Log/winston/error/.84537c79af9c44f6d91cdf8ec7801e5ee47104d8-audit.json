@@ -34,6 +34,11 @@
             "date": 1689606545804,
             "name": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/error/UMS-2023-07-17-21-error.log",
             "hash": "1d0c11598e1a12113caecc37e92612904ced30c15e089c4b79f3dfa87f668f64"
+        },
+        {
+            "date": 1689615052551,
+            "name": "/home/akash/Workspaces/personal/auth-university-management/Log/winston/error/UMS-2023-07-17-23-error.log",
+            "hash": "3d748a7980ffff6b4fc2f5e043784b9ac5e6ae2e97f89e2a8ef5c4ba596ab040"
         }
     ],
     "hashType": "sha256"
