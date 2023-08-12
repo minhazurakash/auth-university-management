@@ -9,6 +9,7 @@ export type IUser = {
   student?: Types.ObjectId | IStudent
   faculty?: Types.ObjectId
   needPasswordChange?: boolean
+  passwordChangeAt?: Date
   // faculty?:Types.ObjectId | IFaculty;
   admin?: Types.ObjectId
   // admin?:Types.ObjectId | IAdmin;
