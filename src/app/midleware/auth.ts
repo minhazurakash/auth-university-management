@@ -13,11 +13,18 @@ const auth =
       }
       //   verify token
       let verifiedUser = null
-      try {
-        verifiedUser = jwtHelpers.verifyToken(token, 'secret')
-      } catch (error) {
-        throw new ApiError(httpStatus.FORBIDDEN, 'Invalid token')
+      verifiedUser = jwtHelpers.verifyToken(token, 'secret')
+      req.user = verifiedUser
+      if (
+        requiredRoles.length > 0 &&
+        !requiredRoles.includes(verifiedUser.role)
+      ) {
+        throw new ApiError(
+          httpStatus.FORBIDDEN,
+          'You have not permission to access this route'
+        )
       }
+      next()
     } catch (error) {
       next(error)
     }
